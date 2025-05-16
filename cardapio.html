@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Restaurante DevWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: white;
+        }
+        main {
+            flex: 1;
+        }
+        .banner {
+            background-color: red;
+            color: white;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="#">Restaurante DevWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cardapio.html">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quem-somos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <div class="banner">
+            <h1>Nosso Cardápio</h1>
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="container my-5">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Prato</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feijoada Completa</td>
+                            <td>Feijoada tradicional com acompanhamentos.</td>
+                            <td>R$ 45,00</td>
+                        </tr>
+                        <tr>
+                            <td>Espaguete à Bolonhesa</td>
+                            <td>Espaguete artesanal com molho de carne.</td>
+                            <td>R$ 35,00</td>
+                        </tr>
+                        <tr>
+                            <td>Frango Grelhado</td>
+                            <td>Peito de frango grelhado com legumes.</td>
+                            <td>R$ 30,00</td>
+                        </tr>
+                        <tr>
+                            <td>Salada Caesar</td>
+                            <td>Salada fresca com frango, parmesão e molho especial.</td>
+                            <td>R$ 28,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cheesecake de Frutas Vermelhas</td>
+                            <td>Sobremesa deliciosa com cobertura de frutas vermelhas.</td>
+                            <td>R$ 18,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Restaurante DevWeb. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
